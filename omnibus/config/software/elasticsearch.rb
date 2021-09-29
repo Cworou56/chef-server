@@ -15,7 +15,7 @@
 #
 
 name "elasticsearch"
-default_version "6.8.18"
+default_version "7.9.1"
 
 dependency "server-open-jre"
 
@@ -33,6 +33,11 @@ end
 version "7.9.3" do
   source url: "https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-#{version}-linux-x86_64.tar.gz",
          sha512: "bb02a5dc1caef97638a959ebba05dd649083c856334f30c670b851067292d7230e561d8759b15a80be73537d7a7efd9cef427d253cbb2efdbd6b168c6f9baa13"
+end
+
+version "7.9.1" do
+  source url: "https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-#{version}-linux-x86_64.tar.gz",
+         sha512: "e24aab0fbeb0b53cc386bb0ca1fc84c457851c5d80d147324bf97ff42f063332a93dec3c693550662393a72c7a0522a100181dd9a7d50b3e487a0f2a2a9bbcc0"
 end
 
 target_path = "#{install_dir}/embedded/elasticsearch"
